@@ -12,6 +12,18 @@ import matplotlib.dates as mdates
 import matplotlib.colors as colors
 import streamlit as st
 
+title = 'Clinical data summary'
+st.set_page_config(page_title=title, page_icon=(":medical_symbol:"),layout="wide",
+                   menu_items={
+                       'About': 'A simple tool for summarising clinical data from data in excel. If you notice any bugs or errors, or have suggestions for additional features which would be helpful then please do get in touch: stephen [dot] auger1 [at] nhs.net'
+                    }
+)
+st.title(title)
+st.write('A simple tool for helping summarise clinical data for patients who have had quite complex protracted hospital stays. Often useful for patients with ID/inflammatory issues. It plots medication dates, steroid doses/dates, lab results (e.g. CRP) and can add annotations with freetext of pertinent clinical events.')
+
+If there’s ever a patient needing a similar summary, all it needs is the data in the attached excel file filling in, and I’d be happy to produce a plot. I’ve also attached the python code (in a .txt file) if anybody is interested in producing their own plots or making their own tweaks.
+ 
+I’m very open to any suggestions for useful features to add or any improvements. I’m seeing if there’s a way to pull the data automatically from cerner rather needing to manually transcribe into excel, but it doesn’t look like I’ll be allowed the necessary access to the backend of cerner.
 
 data_file = st.file_uploader("Choose a file")
 if data_file is not None:
