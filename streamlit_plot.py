@@ -1,5 +1,5 @@
 """
-Summarising medication dates, steroid doses, CRP and clinical events against one another
+Summarising medication dates, steroid doses, CRP, temperature and clinical events against one another
 @author: Stephen Auger
 """
 import pandas as pd
