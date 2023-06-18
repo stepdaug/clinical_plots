@@ -20,7 +20,10 @@ st.set_page_config(page_title=title, page_icon=(":medical_symbol:"),layout="wide
 )
 st.title(title)
 st.write('A simple tool to summarise clinical data. Often useful for ID/inflammatory issues. It plots medication dates, steroid doses/dates, lab results (e.g. CRP), temperature and can add annotations with freetext of pertinent events. No data is stored at any point, it simply generates a plot.')
-st.write('Data needs to be in a specific format. For an example see: https://github.com/stepdaug/clinical_plots/blob/main/data_sample.xlsx and select "Download raw file" on the right hand side')
+st.write('Data needs to be in a specific format. For an example see: https://github.com/stepdaug/clinical_plots/blob/main/data_sample.xlsx and select "Download raw file" on the right hand side.')
+st.write('Code to generate this page is available here: https://github.com/stepdaug/clinical_plots/blob/main/streamlit_plot.py')
+st.write('Code for the exact same functionality but to run on your local machine with python: https://github.com/stepdaug/clinical_plots/blob/main/python_plot.py')
+
 st.write('If you notice any bugs or errors, or have suggestions for additional features which would be helpful then please do get in touch: stephen [dot] auger1 [at] nhs.net.')
 
 data_file = st.file_uploader("Choose a data file (no data is stored):")
