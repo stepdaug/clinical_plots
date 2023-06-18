@@ -24,6 +24,10 @@ st.write('Data needs to be in a specific format. For an example see: https://git
 st.write('If you notice any bugs or errors, or have suggestions for additional features which would be helpful then please do get in touch: stephen [dot] auger1 [at] nhs.net.')
 
 data_file = st.file_uploader("Choose a data file:")
+
+if st.button('To see a demo with some fake data click here'):
+    data_file = 'data_sample.xlsx'
+    
 if data_file is not None:
     x_interval = 2
     
