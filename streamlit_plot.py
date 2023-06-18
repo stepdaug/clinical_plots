@@ -19,11 +19,11 @@ st.set_page_config(page_title=title, page_icon=(":medical_symbol:"),layout="wide
                     }
 )
 st.title(title)
-st.write('A simple tool for helping summarise clinical data for patients who have had quite complex protracted hospital stays. Often useful for patients with ID/inflammatory issues. It plots medication dates, steroid doses/dates, lab results (e.g. CRP) and can add annotations with freetext of pertinent clinical events.')
+st.write('A simple tool to summarise clinical data for patients who have had quite complex protracted hospital stays. Often useful for patients with ID/inflammatory issues. It plots medication dates, steroid doses/dates, lab results (e.g. CRP), temperature and can add annotations with freetext of pertinent clinical events.')
 st.write('Data needs to be in a specific format. For an example see: https://github.com/stepdaug/clinical_plots/blob/main/data_sample.xlsx and select "Download raw file" on the right hand side')
-st.write('If you notice any bugs or errors, or have suggestions for additional features which would be helpful then please do get in touch: stephen [dot] auger1 [at] nhs.net')
+st.write('If you notice any bugs or errors, or have suggestions for additional features which would be helpful then please do get in touch: stephen [dot] auger1 [at] nhs.net.')
 
-data_file = st.file_uploader("Choose a file")
+data_file = st.file_uploader("Choose a data file:")
 if data_file is not None:
     x_interval = 2
     
