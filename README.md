@@ -1,6 +1,4 @@
 # clinical_plots
-Clinical plots
-
 https://stepdaug-clinical-plots-streamlit-plot-h5drxe.streamlit.app/
 
 A simple Streamlit tool to summarise clinical data. Often useful for ID/inflammatory issues. It plots medication dates, steroid doses/dates, lab results (e.g. CRP), temperature and can add annotations with freetext of pertinent events. No data is stored at any point, it simply generates a plot.
