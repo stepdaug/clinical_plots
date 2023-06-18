@@ -25,7 +25,7 @@ st.write('If you notice any bugs or errors, or have suggestions for additional f
 
 data_file = st.file_uploader("Choose a data file:")
 
-if st.button('Or to see a demo with some fake data instead click here'):
+if st.button('Or to see a demo with some fake data, click here instead'):
     data_file = 'data_sample.xlsx'
     
 if data_file is not None:
